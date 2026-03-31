@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Claude Code internals
+.claude/
+CLAUDE.md
+
+# Other project files (not part of this tool)
+vibelearn.py
+news_summarizer-vibelearn-report.md
+
+# OS
+.DS_Store
