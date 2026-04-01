@@ -7,8 +7,9 @@ venv/
 env/
 *.egg-info/
 
-# Claude Code internals
-.claude/
+# Claude Code internals (keep commands/ public)
+.claude/*
+!.claude/commands/
 CLAUDE.md
 
 # Other project files (not part of this tool)

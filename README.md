@@ -40,12 +40,29 @@ python concepts.py https://github.com/user/repo
 # Analyze a local folder — appends to existing CONCEPTS.md
 python concepts.py ./my-project
 
-# Custom output location
-python concepts.py https://github.com/user/repo --output ~/notes/CONCEPTS.md
+# Custom output location — recommended: one file that grows across all your repos
+python concepts.py https://github.com/user/repo --output ~/CONCEPTS.md
 
 # Use a specific provider / model
 python concepts.py https://github.com/user/repo --provider openai --model gpt-4o-mini
 python concepts.py https://github.com/user/repo --provider ollama --model llama3
+```
+
+### Claude Code slash command
+
+This repo ships a `/concepts` slash command for [Claude Code](https://claude.ai/code). Once you have `concepts` on your PATH (see below), open any project in Claude Code and type:
+
+```
+/concepts
+```
+
+It analyzes the current folder and appends new concepts to `~/CONCEPTS.md`.
+
+**Add `concepts` to your PATH:**
+
+```bash
+chmod +x /path/to/concepts.py
+ln -s /path/to/concepts.py /usr/local/bin/concepts
 ```
 
 ---
